@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Friend Finder Survey</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+  <section class="container">
+    <h1 class="title">Answer These Questions and Discover Who Your BFF Is</h1>
+    <hr>
+  </section>
+  <section class="container">
+    <div class="field">
+      <label class="label">Name (Required)</label>
+      <div class="control">
+        <input id="name" class="input" type="text" placeholder="First and Last Name">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Link to Photo Image (Required)</label>
+      <div class="control">
+        <input id="photo" class="input" type="url" placeholder="Place a photo url here">
+      </div>
+    </div>
+    <div class="field">
+      <label class="is-size-4">
+        <strong>Question 1</strong>
+      </label>
+      <p class="is-size-5">You Love Pizza</p>
+      <div class="control">
+        <div class="select">
+          <select data-placeholder id="q1">
+            <option></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="is-size-4">
+        <strong>Question 2</strong>
+      </label>
+      <p class="is-size-5">You Love Tacos</p>
+      <div class="control">
+        <div class="select">
+          <select data-placeholder id="q2">
+            <option></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="is-size-4">
+        <strong>Question 3</strong>
+      </label>
+      <p class="is-size-5">You Are a Beer Person</p>
+      <div class="control">
+        <div class="select">
+          <select data-placeholder id="q3">
+            <option></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="is-size-4">
+        <strong>Question 4</strong>
+      </label>
+      <p class="is-size-5">You Are a Wine Person</p>
+      <div class="control">
+        <div class="select">
+          <select data-placeholder id="q4">
+            <option></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="is-size-4">
+        <strong>Question 5</strong>
+      </label>
+      <p class="is-size-5">You Like Group Chats</p>
+      <div class="control">
+        <div class="select">
+          <select data-placeholder id="q5">
+            <option></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="is-size-4">
+        <strong>Question 6</strong>
+      </label>
+      <p class="is-size-5">Summer is Your Favorite Season</p>
+      <div class="control">
+        <div class="select">
+          <select data-placeholder id="q6">
+            <option></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="is-size-4">
+        <strong>Question 7</strong>
+      </label>
+      <p class="is-size-5">You Love Pumpkin Spiced Lattes</p>
+      <div class="control">
+        <div class="select">
+          <select data-placeholder id="q7">
+            <option></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="is-size-4">
+        <strong>Question 8</strong>
+      </label>
+      <p class="is-size-5">You Love Reality TV Shows</p>
+      <div class="control">
+        <div class="select">
+          <select data-placeholder id="q8">
+            <option></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="is-size-4">
+        <strong>Question 9</strong>
+      </label>
+      <p class="is-size-5">You Like to Play Video Games</p>
+      <div class="control">
+        <div class="select">
+          <select data-placeholder id="q9">
+            <option></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="is-size-4">
+        <strong>Question 10</strong>
+      </label>
+      <p class="is-size-5">You Like Football</p>
+      <div class="control">
+        <div class="select">
+          <select data-placeholder id="q10">
+            <option></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-grouped">
+      <div class="control">
+        <button id="submit" class="button is-primary">
+          <i class="fa fa-hand-peace-o" aria-hidden="true"></i> &nbsp; Submit</button>
+      </div>
+      <div class="control">
+        <a href="/">
+          <button class="button is-text">Cancel</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <hr>
+    <p>
+      <a href="/api/friends" target="_blank">API Friends List</a> | Git Hub Repo</p>
+  </div>
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Modal title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <!-- Content ... -->
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Save changes</button>
+        <button class="button">Cancel</button>
+      </footer>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $("#submit").on("click", function (event) {
+      var currentURL = window.location.origin;
+      var newFriend = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $(
+            "#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()
+        ]
+
+      }
+      console.log(newFriend);
+      $.post(currentURL + "/api/friends", newFriend, function (data) {
+        alert(data);
+      });
+    });
+  </script>
+</body>
+
+</html>
