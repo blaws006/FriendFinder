@@ -37,11 +37,11 @@
         <div class="select">
           <select data-placeholder id="q1">
             <option></option>
-            <option value="1">1</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5</option>
+            <option value="5">5 (Strongly Agree)</option>
           </select>
         </div>
       </div>
@@ -55,11 +55,11 @@
         <div class="select">
           <select data-placeholder id="q2">
             <option></option>
-            <option value="1">1</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5</option>
+            <option value="5">5 (Strongly Agree)</option>
           </select>
         </div>
       </div>
@@ -73,11 +73,11 @@
         <div class="select">
           <select data-placeholder id="q3">
             <option></option>
-            <option value="1">1</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5</option>
+            <option value="5">5 (Strongly Agree)</option>
           </select>
         </div>
       </div>
@@ -91,11 +91,11 @@
         <div class="select">
           <select data-placeholder id="q4">
             <option></option>
-            <option value="1">1</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5</option>
+            <option value="5">5 (Strongly Agree)</option>
           </select>
         </div>
       </div>
@@ -109,11 +109,11 @@
         <div class="select">
           <select data-placeholder id="q5">
             <option></option>
-            <option value="1">1</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5</option>
+            <option value="5">5 (Strongly Agree)</option>
           </select>
         </div>
       </div>
@@ -127,11 +127,11 @@
         <div class="select">
           <select data-placeholder id="q6">
             <option></option>
-            <option value="1">1</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5</option>
+            <option value="5">5 (Strongly Agree)</option>
           </select>
         </div>
       </div>
@@ -145,11 +145,11 @@
         <div class="select">
           <select data-placeholder id="q7">
             <option></option>
-            <option value="1">1</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5</option>
+            <option value="5">5 (Strongly Agree)</option>
           </select>
         </div>
       </div>
@@ -163,11 +163,11 @@
         <div class="select">
           <select data-placeholder id="q8">
             <option></option>
-            <option value="1">1</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5</option>
+            <option value="5">5 (Strongly Agree)</option>
           </select>
         </div>
       </div>
@@ -181,11 +181,11 @@
         <div class="select">
           <select data-placeholder id="q9">
             <option></option>
-            <option value="1">1</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5</option>
+            <option value="5">5 (Strongly Agree)</option>
           </select>
         </div>
       </div>
@@ -199,11 +199,11 @@
         <div class="select">
           <select data-placeholder id="q10">
             <option></option>
-            <option value="1">1</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5</option>
+            <option value="5">5 (Strongly Agree)</option>
           </select>
         </div>
       </div>
@@ -224,7 +224,7 @@
   <div class="container">
     <hr>
     <p>
-      <a href="/api/friends" target="_blank">API Friends List</a> | Git Hub Repo</p>
+      <a href="/api/friends" target="_blank">API Friends List</a> | <a href="https://github.com/blaws006/FriendFinder" target="_blank">Git Hub Repo</a></p>
   </div>
   <div class="modal">
     <div class="modal-background"></div>
@@ -248,8 +248,7 @@
       var newFriend = {
         name: $("#name").val().trim(),
         photo: $("#photo").val().trim(),
-        scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $(
-            "#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()
+        scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(),$("#q9").val(), $("#q10").val()
         ]
 
       }
