@@ -30,22 +30,22 @@ var friendArray = [{
       1
     ]
   },
-  // {
-  //   name: "Chadwick Boseman",
-  //   photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Chadwick_Boseman_by_Gage_Skidmore_July_2017_%28cropped%29.jpg/220px-Chadwick_Boseman_by_Gage_Skidmore_July_2017_%28cropped%29.jpg",
-  //   scores: [
-  //     4,
-  //     3,
-  //     5,
-  //     2,
-  //     1,
-  //     3,
-  //     2,
-  //     5,
-  //     5,
-  //     1
-  //   ]
-  // },
+  {
+    name: "Chadwick Boseman",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Chadwick_Boseman_by_Gage_Skidmore_July_2017_%28cropped%29.jpg/220px-Chadwick_Boseman_by_Gage_Skidmore_July_2017_%28cropped%29.jpg",
+    scores: [
+      4,
+      3,
+      5,
+      2,
+      1,
+      3,
+      2,
+      5,
+      5,
+      1
+    ]
+  },
 
 ]
 
