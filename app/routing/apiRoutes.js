@@ -32,6 +32,7 @@ module.exports = function (app) {
       };
       compareArray.splice(compareArray.length - 1, 1)
       console.log(compareArray);
+      console.log(Math.min.apply(Math, compareArray));
     };
     loopThrough();
   });
