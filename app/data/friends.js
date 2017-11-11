@@ -30,23 +30,38 @@ var friendArray = [{
       1
     ]
   },
-  {
-    name: "Chadwick Boseman",
-    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Chadwick_Boseman_by_Gage_Skidmore_July_2017_%28cropped%29.jpg/220px-Chadwick_Boseman_by_Gage_Skidmore_July_2017_%28cropped%29.jpg",
-    scores: [
-      4,
-      3,
-      5,
-      2,
-      1,
-      3,
-      2,
-      5,
-      5,
-      1
-    ]
-  },
+  // {
+  //   name: "Chadwick Boseman",
+  //   photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Chadwick_Boseman_by_Gage_Skidmore_July_2017_%28cropped%29.jpg/220px-Chadwick_Boseman_by_Gage_Skidmore_July_2017_%28cropped%29.jpg",
+  //   scores: [
+  //     4,
+  //     3,
+  //     5,
+  //     2,
+  //     1,
+  //     3,
+  //     2,
+  //     5,
+  //     5,
+  //     1
+  //   ]
+  // },
 
 ]
 
+function setDifference(A, B) {
+var a = friendArray[0].scores;
+var b = friendArray[1].scores;
+var x = a.map(function (item, index) {
+  return Math.abs(item - b[index]);
+ 
+  
+})
+  console.log(x);
+  var diff = x.reduce((a, b) => Math.abs(a + b), 0);
+
+  console.log(diff)
+}
+
+setDifference();
 module.exports = friendArray;

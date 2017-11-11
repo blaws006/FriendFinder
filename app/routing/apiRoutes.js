@@ -2,6 +2,7 @@ var friends = require("../data/friends");
 
 
 module.exports = function (app) {
+ var compareArray = []
   app.get("/api/friends", function (req, res) {
     res.json(friends);
   });
@@ -9,7 +10,7 @@ module.exports = function (app) {
 
   app.post("/api/friends", function (req, res) {
     friends.push(req.body);
-
+    c
     function loopThrough() {
     for (var i = 0; i < friends.length; i++) {
   
