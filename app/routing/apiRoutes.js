@@ -12,7 +12,7 @@ module.exports = function (app) {
     friends.push(req.body);
 
     function loopThrough(A, B) {
-     
+     compareArray = [];
       for (var i = 0; i < friends.length; i++) {
 
         friends[i].scores = friends[i].scores.map(Number);
@@ -30,9 +30,14 @@ module.exports = function (app) {
        
         console.log(compareArray);
       };
-      compareArray.splice(compareArray.length - 1, 1)
+      
+     
+       compareArray.splice(compareArray.length - 1, 1)
       console.log(compareArray);
-      console.log(Math.min.apply(Math, compareArray));
+     var match = compareArray.indexOf(Math.min.apply(Math, compareArray));
+    
+      console.log(Math.abs(match));
+      console.log(friends[match]);
     };
     loopThrough();
   });
