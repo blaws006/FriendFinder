@@ -35,7 +35,7 @@
       <p class="is-size-5">You Love Pizza</p>
       <div class="control">
         <div class="select">
-          <select data-placeholder id="q1">
+          <select class="choice" id="q1">
             <option></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -53,7 +53,7 @@
       <p class="is-size-5">You Love Tacos</p>
       <div class="control">
         <div class="select">
-          <select data-placeholder id="q2">
+          <select class="choice" id="q2">
             <option></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -71,7 +71,7 @@
       <p class="is-size-5">You Are a Beer Person</p>
       <div class="control">
         <div class="select">
-          <select data-placeholder id="q3">
+          <select class="choice" id="q3">
             <option></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -89,7 +89,7 @@
       <p class="is-size-5">You Are a Wine Person</p>
       <div class="control">
         <div class="select">
-          <select data-placeholder id="q4">
+          <select class="choice" id="q4">
             <option></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -107,7 +107,7 @@
       <p class="is-size-5">You Like Group Chats</p>
       <div class="control">
         <div class="select">
-          <select data-placeholder id="q5">
+          <select class="choice" id="q5">
             <option></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -125,7 +125,7 @@
       <p class="is-size-5">Summer is Your Favorite Season</p>
       <div class="control">
         <div class="select">
-          <select data-placeholder id="q6">
+          <select class="choice" id="q6">
             <option></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -143,7 +143,7 @@
       <p class="is-size-5">You Love Pumpkin Spiced Lattes</p>
       <div class="control">
         <div class="select">
-          <select data-placeholder id="q7">
+          <select class="choice" id="q7">
             <option></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -161,7 +161,7 @@
       <p class="is-size-5">You Love Reality TV Shows</p>
       <div class="control">
         <div class="select">
-          <select data-placeholder id="q8">
+          <select class="choice" id="q8">
             <option></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -179,7 +179,7 @@
       <p class="is-size-5">You Like to Play Video Games</p>
       <div class="control">
         <div class="select">
-          <select data-placeholder id="q9">
+          <select class="choice" id="q9">
             <option></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -197,7 +197,7 @@
       <p class="is-size-5">You Like Football</p>
       <div class="control">
         <div class="select">
-          <select data-placeholder id="q10">
+          <select class="choice" id="q10">
             <option></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -224,39 +224,29 @@
   <div class="container">
     <hr>
     <p>
-      <a href="/api/friends" target="_blank">API Friends List</a> | <a href="https://github.com/blaws006/FriendFinder" target="_blank">Git Hub Repo</a></p>
+      <a href="/api/friends" target="_blank">API Friends List</a> |
+      <a href="https://github.com/blaws006/FriendFinder" target="_blank">Git Hub Repo</a>
+    </p>
   </div>
-  <div class="modal">
+  <div id="resultsModal" class="modal">
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Modal title</p>
-        <button class="delete" aria-label="close"></button>
+        <p class="modal-card-title">You're Best Friends With:</p>
+        <button class="delete toggleOff" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
-        <!-- Content ... -->
+        <h3 align="center" class="matchName is-size-5"></h3>
+        <div class="imgHolder" align="center">
+          <img align="center" class="matchImg" src="" alt="" />
+        </div>
       </section>
       <footer class="modal-card-foot">
-        <button class="button is-success">Save changes</button>
-        <button class="button">Cancel</button>
+        <button class="button is-success toggleOff">Hi, Friend</button>
       </footer>
     </div>
   </div>
-  <script type="text/javascript">
-    $("#submit").on("click", function (event) {
-      var currentURL = window.location.origin;
-      var newFriend = {
-        name: $("#name").val().trim(),
-        photo: $("#photo").val().trim(),
-        scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(),$("#q9").val(), $("#q10").val()
-        ]
-
-      }
-      console.log(newFriend);
-      $.post(currentURL + "/api/friends", newFriend, function (data) {
-      });
-    });
-  </script>
+  <script src="submit.js"></script>
 </body>
 
 </html>
