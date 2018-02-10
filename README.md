@@ -8,8 +8,8 @@ git clone this project at `git@github.com:blaws006/FriendFinder.git`
 
 ### Installing
 
-* Run an `npm install` in the cloned repository
-* Fire up the local server and see the magic
+* Run an `npm install` in the cloned repository to install dependencies
+* Fire up the local server (localhost 3000 will get you there)
 
 ## Built With
 
