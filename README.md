@@ -1,6 +1,6 @@
 # FriendFinder
 
-![Alt Text](https://media.giphy.com/media/l4pSUQ1RIcEqPzxYs/giphy.gif)
+![Friend Finder](https://media.giphy.com/media/l4pSUQ1RIcEqPzxYs/giphy.gif)
 
 FriendFinder matches you to your ideal bff, after you've answered some survey questions. Once you've answered your questions, logic within the routing takes your collection of answers and compares them to other potential friends that took the survey. When comparisons are complete, a modal pops up with your best match displayed.
 
